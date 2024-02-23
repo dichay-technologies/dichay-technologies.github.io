@@ -1,9 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit"
 import projects from "./projects"
+import footer from "./footer"
 
 const store = configureStore({
 	reducer: {
-		projects
+		projects, footer
 	}
 })
 

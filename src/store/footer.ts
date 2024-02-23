@@ -1,25 +1,25 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit"
 import { RootState } from "."
-import { ProjectData } from "../types/props"
+import { FooterData } from "../types/props"
 
 interface ProjectsSlice {
-	value: ProjectData[]
+	value: FooterData
 }
 
 const initialState: ProjectsSlice = {
-	value: []
+	value: { company: [], contacts: [] }
 }
 
 const projectsSlice = createSlice({
 	name: 'projects',
 	initialState,
 	reducers: {
-		setProjects(state, action: PayloadAction<ProjectData[]>) {
+		setFooterInfo(state, action: PayloadAction<FooterData>) {
 			state.value = action.payload
 		}
 	}
 })
 
-export const {setProjects} = projectsSlice.actions
-export const selectProjects = (state: RootState) => state.projects.value
+export const { setFooterInfo  } = projectsSlice.actions
+export const selectFooterInfo = (state: RootState) => state.footer.value
 export default projectsSlice.reducer

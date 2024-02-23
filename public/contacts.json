@@ -1,0 +1,24 @@
+{
+	"$schema": {
+		"name": "Title on desktop version",
+		"value": "Display text",
+		"icon": "Icon on mobile version (bootstrap-icons)",
+		"actionArgument": "Argument to action, optional, default is same as value",
+		"type": "Action type, may be 'copy' or 'open'"
+	},
+	"value": [
+		{
+			"name": "Telegram",
+			"value": "@dichay_tech",
+			"icon": "bi-telegram",
+			"actionArgument": "https://t.me/dichay_tech",
+			"type": "open"
+		},
+		{
+			"name": "E-mail",
+			"value": "order@dichay.tech",
+			"icon": "bi-envelope-fill",
+			"type": "copy"
+		}
+	]
+}

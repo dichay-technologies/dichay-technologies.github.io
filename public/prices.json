@@ -1,0 +1,24 @@
+{
+	"value": [
+		{
+			"name": "Chat Bot",
+			"price": "$ 50+"
+		},
+		{
+			"name": "Design Layout",
+			"price": "$ 200+"
+		},
+		{
+			"name": "Front-End",
+			"price": "$ 200+"
+		},
+		{
+			"name": "Back-End",
+			"price": "$ 500+"
+		},
+		{
+			"name": "Special",
+			"price": "$ XXX"
+		}
+	]
+}

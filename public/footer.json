@@ -1,0 +1,9 @@
+{
+	"company": [
+		"Lines about company",
+		"Will be rendered in column"
+	],
+	"contacts": [
+		"Behave like company block"
+	]
+}

@@ -1,91 +1,59 @@
 import { useEffect } from "react"
 import { useDispatch } from "react-redux"
-import { setProjects } from "./store/projects"
-import Root from "./pages/Root"
-import { Link, Route, Routes } from "react-router-dom"
+import { Route, Routes, useLocation } from "react-router-dom"
 import Projects from "./pages/Projects"
+import Root from "./pages/Root"
+import { setProjects } from "./store/projects"
+import { NavBar } from "./components/NavBar"
+import { setFooterInfo } from "./store/footer"
+import { Footer } from "./components/Footer"
+import { About } from "./pages/About"
 
 function App() {
 
-	let dispatch = useDispatch()
+	const dispatch = useDispatch()
 
 	useEffect(() => {
-		let projects: ProjectData[] = [
-			{
-				name: "Kolersky Photo Bot",
-				url: "https://t.me/Kolersky_Photo_Bot",
-				image: "wr.jpg",
-				description: "Remove watermark or background from photo",
-				showOnMain: true
-			}, {
-				name: "Kolersky Photo Bot",
-				url: "https://t.me/Kolersky_Photo_Bot",
-				image: "wr.jpg",
-				description: "Remove watermark or background from photo",
-				showOnMain: true
-			}, {
-				name: "Kolersky Photo Bot",
-				url: "https://t.me/Kolersky_Photo_Bot",
-				image: "wr.jpg",
-				description: "Remove watermark or background from photo",
-				showOnMain: true
-			}, {
-				name: "Kolersky Photo Bot",
-				url: "https://t.me/Kolersky_Photo_Bot",
-				image: "wr.jpg",
-				description: "Remove watermark or background from photo"
-			}, {
-				name: "Kolersky Photo Bot",
-				url: "https://t.me/Kolersky_Photo_Bot",
-				image: "wr.jpg",
-				description: "Remove watermark or background from photo"
-			}, {
-				name: "Kolersky Photo Bot",
-				url: "https://t.me/Kolersky_Photo_Bot",
-				image: "wr.jpg",
-				description: "Remove watermark or background from photo"
-			}, {
-				name: "Kolersky Photo Bot",
-				url: "https://t.me/Kolersky_Photo_Bot",
-				image: "wr.jpg",
-				description: "Remove watermark or background from photo"
-			}, {
-				name: "Kolersky Photo Bot",
-				url: "https://t.me/Kolersky_Photo_Bot",
-				image: "wr.jpg",
-				description: "Remove watermark or background from photo"
-			},
-		]
-		dispatch(setProjects(projects))
+		fetch("/projects/projects.json").then(value => value.text()).then(value => {
+			const projects = JSON.parse(value).value
+			dispatch(setProjects(projects))
+		})
+		fetch("/footer.json").then(value => value.text()).then(value => {
+			const footerInfo = JSON.parse(value)
+			dispatch(setFooterInfo(footerInfo))
+		})
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [])
 
-	let routes = [
+
+	const routes = [
 		{
 			path: '/',
 			name: 'Home',
+			icon: "bi-house-door",
 			element: <Root />
-		},{
+		}, {
 			path: '/projects',
 			name: 'Projects',
+			icon: "bi-projector",
 			element: <Projects />
+		}, {
+			path: '/about',
+			name: 'About',
+			icon: "bi-info-circle",
+			element: <About />
 		}
 	]
 
+	const location = useLocation()
+
 	return (
 		<>
-			<nav className="w-full p-4 bg-background-600 h-min flex flex-row justify-between text-white sticky top-0">
-				<div className="">
-					<div className="text-white font-bold text-xl">DiChay Technologies</div>
-				</div>
-				<div className="flex flex-row gap-2">{
-					routes.map(r => (
-						<Link key={r.path} to={r.path}>{r.name}</Link>
-					))
-				}</div>
-			</nav>
+			<NavBar routes={routes} location={location} />
 			<Routes>
-				{routes.map(r => <Route path={r.path} key={r.path} element={r.element}/>)}
+				{routes.map(r => <Route path={r.path} key={r.path} element={r.element} />)}
 			</Routes>
+			<Footer />
 		</>
 	)
 }

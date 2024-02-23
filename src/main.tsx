@@ -5,6 +5,7 @@ import './index.css'
 import store from './store/index.ts'
 import { Provider } from 'react-redux'
 import { HashRouter } from 'react-router-dom'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
