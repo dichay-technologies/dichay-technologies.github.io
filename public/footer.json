@@ -5,5 +5,11 @@
 	],
 	"contacts": [
 		"Behave like company block"
+	],
+	"social": [
+		{
+			"icon": "bi-github",
+			"link": "https://github.com/dichay-tech"
+		}
 	]
 }

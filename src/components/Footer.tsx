@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import { selectFooterInfo } from "../store/footer";
+import OpenLink from "../util/openLink";
 
 export function Footer() {
 	const info = useSelector(selectFooterInfo);
@@ -12,6 +13,9 @@ export function Footer() {
 		<div className="flex flex-col items-center">
 			<div className="font-bold text-xl">Contacts</div>
 			{info.contacts.map(l => <div key={l}>{l}</div>)}
+		</div>
+		<div className="flex flex-row justify-center">
+			{info.social.map(s => <div className="flex items-baseline h-min bg-zinc-800 px-4 py-3 text-xl rounded-3xl" onClick={() => OpenLink(s.link)}><i className={s.icon}/></div>)}
 		</div>
 	</footer>;
 }

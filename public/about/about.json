@@ -1,0 +1,24 @@
+{
+	"$schema": {
+		"text": "Text in block",
+		"image": "Image in block"
+	},
+	"value": [
+		{
+			"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nulla libero, rutrum et ligula dignissim, vulputate interdum lacus. Sed pellentesque lectus risus, et semper eros tempor eu. Morbi sed semper magna, quis dictum nulla. Phasellus commodo lobortis aliquet. Praesent cursus vel augue at commodo. Donec et mattis urna, eu fringilla urna. In sagittis neque a leo posuere sagittis. Donec molestie libero at massa suscipit, at blandit est egestas. Ut dictum est magna.",
+			"image": "dichay-self-portrait.jpg"
+		},{
+			"text": " Nam bibendum lectus eu porta pretium. Nullam consequat justo tempus sapien tincidunt pretium. Morbi accumsan lobortis velit at sollicitudin. Suspendisse vel augue ut felis laoreet congue at nec dui. Phasellus sodales libero non fringilla pharetra. Curabitur nisl tellus, cursus eu rhoncus ut, mollis ut est. Sed ornare lorem quis consectetur pellentesque. Morbi quis erat non nisi euismod efficitur vel quis tortor. Aliquam finibus nibh vitae dui viverra congue. Ut nisl metus, aliquam et nunc quis, semper tincidunt felis.",
+			"image": "dichay-self-portrait.jpg"
+		},{
+			"text": " Integer nec magna sapien. Nulla lobortis lacus quis rutrum ultrices. Cras pretium lobortis luctus. Aliquam dui ligula, lobortis a ullamcorper et, condimentum sit amet justo. In imperdiet, massa eu accumsan laoreet, velit tellus auctor nulla, eu pulvinar ligula nisi id ipsum. Vestibulum pharetra leo ut nulla fermentum, quis bibendum quam bibendum. Nam eget lacinia nibh. Nulla risus massa, fringilla non lacus elementum, bibendum porta libero. Sed eget ullamcorper justo. Proin pulvinar felis id convallis eleifend. Curabitur a gravida neque.",
+			"image": "dichay-self-portrait.jpg"
+		},{
+			"text": " Morbi eleifend molestie vestibulum. Morbi sodales, eros et iaculis ultricies, neque dolor posuere mauris, in ultrices lorem tortor ac velit. Sed eget lorem bibendum, volutpat libero sed, faucibus urna. Aliquam nisl odio, pellentesque a fermentum id, ultrices non augue. Integer condimentum dui vel elit molestie dignissim. Morbi felis sem, egestas quis pellentesque at, feugiat ut arcu. Nunc semper risus lacus, ut convallis nisi convallis in. Nam maximus lectus aliquet dapibus eleifend. Proin id arcu gravida, laoreet nisl ut, molestie ipsum. Fusce semper tempus elit, eu vehicula erat rutrum sed.",
+			"image": "dichay-self-portrait.jpg"
+		},{
+			"text": "Aliquam vehicula hendrerit imperdiet. Duis sed sollicitudin tellus, et luctus justo. Vestibulum suscipit risus sed ullamcorper aliquam. Mauris id efficitur libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus maximus ligula eget sodales interdum. Nunc at varius dolor, sit amet finibus turpis.",
+			"image": "dichay-self-portrait.jpg"
+		}
+	]
+}

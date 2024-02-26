@@ -36,7 +36,7 @@ function Root() {
 	}
 
 	return (
-		<>
+		<div className="min-h-screen">
 			<div className="w-full h-min bg-[url('/dichay-tech-background.jpeg')] bg-center bg-scroll bg-cover px-8 p-16 md:p-16 flex flex-col md:flex-row items-center justify-evenly">
 				<div className="flex flex-col">
 					<span className="text-white font-bold text-5xl md:text-6xl text-center md:text-start">DiChay Technologies</span>
@@ -75,7 +75,7 @@ function Root() {
 					</div>
 				</div>
 			</ContextWindow>
-		</>
+		</div>
 	)
 }
 

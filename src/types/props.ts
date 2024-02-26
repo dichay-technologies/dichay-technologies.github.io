@@ -7,4 +7,4 @@ export type ContextWindowProps = {
 	children?: JSX.Element | string;
 	onClose?: () => void
 }
-export type FooterData = { company: string[], contacts: string[] }
+export type FooterData = { company: string[], contacts: string[], social: {icon: string, link: string}[] }

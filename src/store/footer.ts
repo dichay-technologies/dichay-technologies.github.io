@@ -7,7 +7,7 @@ interface ProjectsSlice {
 }
 
 const initialState: ProjectsSlice = {
-	value: { company: [], contacts: [] }
+	value: { company: [], contacts: [], social: [] }
 }
 
 const projectsSlice = createSlice({
@@ -20,6 +20,6 @@ const projectsSlice = createSlice({
 	}
 })
 
-export const { setFooterInfo  } = projectsSlice.actions
+export const { setFooterInfo } = projectsSlice.actions
 export const selectFooterInfo = (state: RootState) => state.footer.value
 export default projectsSlice.reducer
