@@ -1,0 +1,62 @@
+{
+	"$schema": {
+		"name": "Project Name, string",
+		"url": "Project link, string",
+		"image": "image file name (from ./images folder), string",
+		"description": "Project description, string",
+		"showOnMain": "Show on main page or not, boolean, optional"
+	},
+	"value": [
+		{
+			"name": "Kolersky Photo Bot",
+			"url": "https://t.me/Kolersky_Photo_Bot",
+			"image": "wr.jpg",
+			"description": "Remove watermark or background from photo",
+			"showOnMain": true
+		},
+		{
+			"name": "Kolersky Photo Bot",
+			"url": "https://t.me/Kolersky_Photo_Bot",
+			"image": "wr.jpg",
+			"description": "Remove watermark or background from photo",
+			"showOnMain": true
+		},
+		{
+			"name": "Kolersky Photo Bot",
+			"url": "https://t.me/Kolersky_Photo_Bot",
+			"image": "wr.jpg",
+			"description": "Remove watermark or background from photo",
+			"showOnMain": true
+		},
+		{
+			"name": "Kolersky Photo Bot",
+			"url": "https://t.me/Kolersky_Photo_Bot",
+			"image": "wr.jpg",
+			"description": "Remove watermark or background from photo"
+		},
+		{
+			"name": "Kolersky Photo Bot",
+			"url": "https://t.me/Kolersky_Photo_Bot",
+			"image": "wr.jpg",
+			"description": "Remove watermark or background from photo"
+		},
+		{
+			"name": "Kolersky Photo Bot",
+			"url": "https://t.me/Kolersky_Photo_Bot",
+			"image": "wr.jpg",
+			"description": "Remove watermark or background from photo"
+		},
+		{
+			"name": "Kolersky Photo Bot",
+			"url": "https://t.me/Kolersky_Photo_Bot",
+			"image": "wr.jpg",
+			"description": "Remove watermark or background from photo"
+		},
+		{
+			"name": "Kolersky Photo Bot",
+			"url": "https://t.me/Kolersky_Photo_Bot",
+			"image": "wr.jpg",
+			"description": "Remove watermark or background from photo"
+		}
+	]
+}
