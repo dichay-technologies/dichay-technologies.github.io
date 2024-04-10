@@ -1,15 +1,15 @@
 {
 	"company": [
-		"Lines about company",
-		"Will be rendered in column"
+		"",
+		""
 	],
 	"contacts": [
-		"Behave like company block"
+		""
 	],
 	"social": [
 		{
 			"icon": "bi-github",
-			"link": "https://github.com/dichay-tech"
+			"link": "https://github.com/dichay-technologies/"
 		}
 	]
 }
