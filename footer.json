@@ -9,7 +9,11 @@
 	"social": [
 		{
 			"icon": "bi-github",
-			"link": "https://github.com/dichay-technologies/"
+			"link": "https://github.com/dichay-technologies"
+		}, 
+        {
+			"icon": "bi-telegram",
+			"link": "https://t.me/dichay_tech"
 		}
 	]
 }
