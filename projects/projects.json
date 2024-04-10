@@ -8,55 +8,11 @@
 	},
 	"value": [
 		{
-			"name": "Kolersky Photo Bot",
-			"url": "https://t.me/Kolersky_Photo_Bot",
+			"name": "Chat-Bots for Kolersky",
+			"url": "https://t.me/kolerskych",
 			"image": "wr.jpg",
-			"description": "Remove watermark or background from photo",
+			"description": "Chat Bots with neural networks such as MidJourney, Stable-Diffusion(PhotoBot), formerly a bot based on Pixelbin.",
 			"showOnMain": true
-		},
-		{
-			"name": "Kolersky Photo Bot",
-			"url": "https://t.me/Kolersky_Photo_Bot",
-			"image": "wr.jpg",
-			"description": "Remove watermark or background from photo",
-			"showOnMain": true
-		},
-		{
-			"name": "Kolersky Photo Bot",
-			"url": "https://t.me/Kolersky_Photo_Bot",
-			"image": "wr.jpg",
-			"description": "Remove watermark or background from photo",
-			"showOnMain": true
-		},
-		{
-			"name": "Kolersky Photo Bot",
-			"url": "https://t.me/Kolersky_Photo_Bot",
-			"image": "wr.jpg",
-			"description": "Remove watermark or background from photo"
-		},
-		{
-			"name": "Kolersky Photo Bot",
-			"url": "https://t.me/Kolersky_Photo_Bot",
-			"image": "wr.jpg",
-			"description": "Remove watermark or background from photo"
-		},
-		{
-			"name": "Kolersky Photo Bot",
-			"url": "https://t.me/Kolersky_Photo_Bot",
-			"image": "wr.jpg",
-			"description": "Remove watermark or background from photo"
-		},
-		{
-			"name": "Kolersky Photo Bot",
-			"url": "https://t.me/Kolersky_Photo_Bot",
-			"image": "wr.jpg",
-			"description": "Remove watermark or background from photo"
-		},
-		{
-			"name": "Kolersky Photo Bot",
-			"url": "https://t.me/Kolersky_Photo_Bot",
-			"image": "wr.jpg",
-			"description": "Remove watermark or background from photo"
 		}
 	]
 }

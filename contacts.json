@@ -15,7 +15,7 @@
 			"type": "open"
 		},
 		{
-			"name": "E-mail",
+			"name": "e-mail",
 			"value": "contact@dichay.tech",
 			"icon": "bi-envelope-fill",
 			"type": "copy"
