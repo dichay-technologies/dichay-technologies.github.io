@@ -7,6 +7,9 @@ import { useEffect, useState } from "react"
 import { ContextWindow } from "../components/ContextWindow"
 import { Button } from "../components/Button"
 
+const tagLine = fetch("/tagline.txt").then(v => v.text()).then(v => return v)
+const prices = fetch("/prices.json").then(v => v.text()).then(v => return JSON.parse(v).value)
+const contacts = fetch("/contacts.json").then(v => v.text()).then(v => return JSON.parse(v).value)
 
 function Root() {
 	const projects = useSelector(selectProjects)
@@ -14,11 +17,15 @@ function Root() {
 	const [tagLine, setTagLine] = useState<string>("")
 	const [prices, setPrices] = useState<{name: string,price: string}[]>([])
 	const [contacts, setContacts] = useState<{name: string,value: string,icon: string,actionArgument?: string,type: "copy" | "open"}[]>([])
-	useEffect(() => {
+
+	setTagLine(tagLine)
+	setPrices(prices)
+	setContacts(contacts)
+	/*useEffect(() => {
 		fetch("/tagline.txt").then(v => v.text()).then(v => setTagLine(v))
 		fetch("/prices.json").then(v => v.text()).then(v => setPrices(JSON.parse(v).value))
 		fetch("/contacts.json").then(v => v.text()).then(v => setContacts(JSON.parse(v).value))
-	})
+	})*/
 
 	function switchContext(state: boolean) {
 		setContextShown(state)
