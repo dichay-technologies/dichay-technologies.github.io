@@ -1,14 +1,20 @@
 import { useEffect, useState } from "react"
 
+const about = fetch("/about/about.json").then(v => v.text()).then(v => {
+			return JSON.parse(v).value
+		})
+
 export function About() {
 
 	const [text, setText] = useState<{ text: string, image: string }[]>([])
 
-	useEffect(() => {
+	setText(about)
+
+	/*useEffect(() => {
 		fetch("/about/about.json").then(v => v.text()).then(v => {
 			setText(JSON.parse(v).value)
 		})
-	}, [])
+	}, [])*/
 
 	return (<div className="p-4 md:p-12 bg-background-400 text-white text-justify text-xl flex flex-col gap-4 min-h-screen">
 		{text.map((v, k) => 
